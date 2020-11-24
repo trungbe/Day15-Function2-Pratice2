@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai6</title>
+<!--    Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không. -->
+<!--    Nếu là nguyên dương trả về true, ngược lại trả về false.-->
+</head>
+<body>
+<script>
+    function checkIntegerNum(num){
+        if(num % 1 != 0 || num <= 0){
+            return false;
+        }
+        return true;
+    }
+    let result = checkIntegerNum(+prompt("enter number"));
+    document.write(result);
+</script>
+</body>
+</html>

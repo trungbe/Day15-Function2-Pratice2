@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+    <!--    Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được-->
+</head>
+<body>
+<script>
+    function acreageCircle(r) {
+        return Math.round(3.14 * r * r);
+    }
+
+    function perimeterCircle(r) {
+        return Math.round(2 * 3.14 * r);
+    }
+
+    let r1 = +prompt('Nhập bán kính')
+    document.write('Diện tích hình tròn có bán kính ' + r1 + ' là: ' + acreageCircle(r1));
+    document.write('<br>')
+    document.write('Chu vi hình tròn có bán kính ' + r1 + ' là: ' + perimeterCircle(r1));
+</script>
+</body>
+</html>

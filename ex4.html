@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+    <!--    Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. -->
+    <!--    Nếu là ký tự số hàm trả về true, ngược lại trả về false.-->
+</head>
+<body>
+<script>
+    function checkNum(char) {
+        if (char % 1 == 0) {
+            return true;
+        }
+        return false;
+    }
+    function checkChar(char) {
+        do {
+            char = prompt("Nhap ki tu");
+            if (char.length <= 1) {
+                return char;
+            }
+        } while (char.length > 1);
+    }
+    alert(checkNum(checkChar()));
+</script>
+</body>
+</html>
